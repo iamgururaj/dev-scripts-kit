@@ -4,13 +4,6 @@ This repository contains helper scripts for Git operations on both Windows and L
 
 ## Scripts Overview
 
-- **win/gac.cmd**: Git add and commit for Windows (Batch script)
-- **win/gacp.cmd**: Git add, commit, and push for Windows (Batch script)
-- **linux/gac.sh**: Git add and commit for Linux (Shell script)
-- **linux/gacp.sh**: Git add, commit, and push for Linux (Shell script)
-
----
-
 ## Instructions
 
 ### Windows
