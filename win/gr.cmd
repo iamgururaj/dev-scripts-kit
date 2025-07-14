@@ -1,8 +1,9 @@
 @echo off
-REM gr.cmd - git remote add origin <url>
+REM gr.cmd - git remote add origin url
 
-if "%~1"=="" (
-    echo Usage: gr.cmd <remote-url>
+if "%1"=="" (
+    echo Error: Remote URL required.
     exit /b 1
 )
-git remote add origin %~1
+
+git remote add origin %1

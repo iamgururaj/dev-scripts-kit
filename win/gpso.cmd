@@ -1,10 +1,9 @@
 @echo off
-REM gpso.cmd - git push origin <branch>
+REM gpso.cmd - git push origin branch
 
-if "%~1"=="" (
-    echo Usage: gpso.cmd <branch>
+if "%1"=="" (
+    echo Error: Branch name required.
     exit /b 1
 )
 
-REM Use %~1 to properly expand the first argument
-git push origin %~1
+git push origin %1
