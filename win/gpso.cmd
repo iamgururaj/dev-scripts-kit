@@ -5,4 +5,6 @@ if "%~1"=="" (
     echo Usage: gpso.cmd <branch>
     exit /b 1
 )
-git push origin %1
+
+REM Use %~1 to properly expand the first argument
+git push origin %~1
