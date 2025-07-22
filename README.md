@@ -2,7 +2,70 @@
 
 This repository contains helper scripts for Git operations on both Windows and Linux.
 
-## Scripts Overview
+
+## Available Commands
+
+Below is a list of available scripts for both Linux and Windows, with their usage:
+
+### Linux Scripts (in `linux/`)
+
+| Script    | Usage Example                        | Description                                 |
+|-----------|--------------------------------------|---------------------------------------------|
+| gaa.sh    | `gaa.sh`                             | git add .                                   |
+| gac.sh    | `gac.sh "commit msg"`               | git add . & commit with message             |
+| gacp.sh   | `gacp.sh` (interactive)              | git add . & commit & push (prompts for msg & branch) |
+| gb.sh     | `gb.sh`                              | git branch                                  |
+| gcl.sh    | `gcl.sh <repo-url>`                  | git clone <repo-url>                        |
+| gcm.sh    | `gcm.sh`                             | git checkout main                           |
+| gco.sh    | `gco.sh <branch>`                    | git checkout <branch>                       |
+| gcob.sh   | `gcob.sh <branch>`                   | git checkout -b <branch>                    |
+| gcom.sh   | `gcom.sh`                            | git checkout master                         |
+| gi.sh     | `gi.sh`                              | git init                                    |
+| gm.sh     | `gm.sh <branch>`                     | git merge <branch>                          |
+| gp.sh     | `gp.sh`                              | git push                                    |
+| gpom.sh   | `gpom.sh`                            | git push origin main                        |
+| gpso.sh   | `gpso.sh <branch>`                   | git push origin <branch>                    |
+| gr.sh     | `gr.sh <remote-url>`                 | git remote add origin <url>                 |
+| gs.sh     | `gs.sh`                              | git status                                  |
+| nb.sh     | `nb.sh <branch>`                     | git checkout -b <branch>                    |
+| nci.sh    | `nci.sh`                             | npm ci                                      |
+| nd.sh     | `nd.sh`                              | npm run dev                                 |
+| ni.sh     | `ni.sh`                              | npm install                                 |
+| nid.sh    | `nid.sh`                             | npm install & npm run dev                   |
+| nl.sh     | `nl.sh`                              | npm list                                    |
+| np.sh     | `np.sh`                              | npm publish                                 |
+| ns.sh     | `ns.sh`                              | npm start                                   |
+| nt.sh     | `nt.sh`                              | npm test                                    |
+
+### Windows Scripts (in `win/`)
+
+| Script    | Usage Example                        | Description                                 |
+|-----------|--------------------------------------|---------------------------------------------|
+| gaa.cmd   | `gaa.cmd`                            | git add .                                   |
+| gac.cmd   | `gac.cmd "commit msg"`              | git add . & commit with message             |
+| gacp.cmd  | `gacp.cmd` (interactive)             | git add . & commit & push (prompts for msg & branch) |
+| gb.cmd    | `gb.cmd`                             | git branch                                  |
+| gcl.cmd   | `gcl.cmd <repo-url>`                 | git clone <repo-url>                        |
+| gcm.cmd   | `gcm.cmd`                            | git checkout main                           |
+| gco.cmd   | `gco.cmd <branch>`                   | git checkout <branch>                       |
+| gcob.cmd  | `gcob.cmd <branch>`                  | git checkout -b <branch>                    |
+| gcom.cmd  | `gcom.cmd`                           | git checkout master                         |
+| gi.cmd    | `gi.cmd`                             | git init                                    |
+| gm.cmd    | `gm.cmd <branch>`                    | git merge <branch>                          |
+| gp.cmd    | `gp.cmd`                             | git push                                    |
+| gpom.cmd  | `gpom.cmd`                           | git push origin main                        |
+| gpso.cmd  | `gpso.cmd <branch>`                  | git push origin <branch>                    |
+| gr.cmd    | `gr.cmd <remote-url>`                | git remote add origin <url>                 |
+| gs.cmd    | `gs.cmd`                             | git status                                  |
+| nb.cmd    | `nb.cmd <branch>`                    | git checkout -b <branch>                    |
+| nci.cmd   | `nci.cmd`                            | npm ci                                      |
+| nd.cmd    | `nd.cmd`                             | npm run dev                                 |
+| ni.cmd    | `ni.cmd`                             | npm install                                 |
+| nid.cmd   | `nid.cmd`                            | npm install & npm run dev                   |
+| nl.cmd    | `nl.cmd`                             | npm list                                    |
+| np.cmd    | `np.cmd`                             | npm publish                                 |
+| ns.cmd    | `ns.cmd`                             | npm start                                   |
+| nt.cmd    | `nt.cmd`                             | npm test                                    |
 
 ## Instructions
 
