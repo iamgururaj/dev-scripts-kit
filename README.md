@@ -57,6 +57,7 @@ Below is a list of available scripts for both Linux and Windows, with their usag
 | gpso.cmd  | `gpso.cmd <branch>`                  | git push origin <branch>                    |
 | gr.cmd    | `gr.cmd <remote-url>`                | git remote add origin <url>                 |
 | gs.cmd    | `gs.cmd`                             | git status                                  |
+| gcf.cmd   | `gcf.cmd`                            | git clean -fd (remove untracked files/dirs)  |
 | nb.cmd    | `nb.cmd <branch>`                    | git checkout -b <branch>                    |
 | nci.cmd   | `nci.cmd`                            | npm ci                                      |
 | nd.cmd    | `nd.cmd`                             | npm run dev                                 |
