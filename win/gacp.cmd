@@ -1,15 +1,19 @@
 @echo off
-REM Usage: gacp "commit message" branch_name
+REM gacp.cmd - Add, commit, and push with interactive prompts
 
-IF "%~1"=="" (
-  echo Error: Commit message required. Usage: gacp "commit message" branch_name
-  exit /b 1
+SETLOCAL ENABLEDELAYEDEXPANSION
+
+SET commit_msg=%~1
+SET branch_name=%~2
+
+IF "%commit_msg%"=="" (
+  SET /P commit_msg=Enter commit message: 
 )
-IF "%~2"=="" (
-  echo Error: Branch name required. Usage: gacp "commit message" branch_name
-  exit /b 1
+
+IF "%branch_name%"=="" (
+  SET /P branch_name=Enter branch name: 
 )
 
 git add .
-git commit -m "%~1"
-git push origin "%~2"
+git commit -m "%commit_msg%"
+git push origin "%branch_name%"

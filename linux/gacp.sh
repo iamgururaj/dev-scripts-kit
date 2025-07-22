@@ -1,11 +1,18 @@
 #!/bin/bash
-# Usage: gacp "commit message" branch_name
+# gacp.sh - Add, commit, and push with interactive prompts
 
-if [ -z "$1" ] || [ -z "$2" ]; then
-  echo "Error: Commit message and branch name required. Usage: gacp \"commit message\" branch_name"
-  exit 1
+if [ -z "$1" ]; then
+  read -p "Enter commit message: " commit_msg
+else
+  commit_msg="$1"
+fi
+
+if [ -z "$2" ]; then
+  read -p "Enter branch name: " branch_name
+else
+  branch_name="$2"
 fi
 
 git add .
-git commit -m "$1"
-git push origin "$2"
+git commit -m "$commit_msg"
+git push origin "$branch_name"
