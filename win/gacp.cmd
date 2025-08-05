@@ -11,7 +11,7 @@ IF "%commit_msg%"=="" (
 )
 
 IF "%branch_name%"=="" (
-  SET /P branch_name=Enter branch name: 
+  FOR /F "delims=" %%b IN ('git rev-parse --abbrev-ref HEAD') DO SET branch_name=%%b
 )
 
 git add .

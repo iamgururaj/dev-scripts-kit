@@ -1,16 +1,15 @@
 #!/bin/bash
 # gacp.sh - Add, commit, and push with interactive prompts
 
-if [ -z "$1" ]; then
+commit_msg="$1"
+branch_name="$2"
+
+if [ -z "$commit_msg" ]; then
   read -p "Enter commit message: " commit_msg
-else
-  commit_msg="$1"
 fi
 
-if [ -z "$2" ]; then
-  read -p "Enter branch name: " branch_name
-else
-  branch_name="$2"
+if [ -z "$branch_name" ]; then
+  branch_name=$(git rev-parse --abbrev-ref HEAD)
 fi
 
 git add .
