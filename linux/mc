@@ -1,6 +1,5 @@
 #!/bin/bash
 source "$(dirname "$0")/log_time.sh"
 start=$(date +%s%N)
-mvn -q compile
-end=$(date +%s%N)
-log_time "$start" "$end"
+mvn -q compile -DskipTests
+log_time "$start"

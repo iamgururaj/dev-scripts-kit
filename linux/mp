@@ -2,5 +2,4 @@
 source "$(dirname "$0")/log_time.sh"
 start=$(date +%s%N)
 mvn -q package -DskipTests
-end=$(date +%s%N)
-log_time "$start" "$end"
+log_time "$start"
