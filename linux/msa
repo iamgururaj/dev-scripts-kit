@@ -1,0 +1,4 @@
+#!/bin/bash
+# Script to run mvn spotless:apply
+
+mvn spotless:apply
