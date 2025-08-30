@@ -1,7 +1,6 @@
 #!/bin/bash
-start=$(date +%s%3N)
+source "$(dirname "$0")/log_time.sh"
+start=$(date +%s%N)
 mvn -q install
-end=$(date +%s%3N)
-duration=$((end-start))
-seconds=$(awk "BEGIN {printf \"%.3f\", $duration/1000}")
-echo "Time taken: ${seconds}s (${duration}ms)"
+end=$(date +%s%N)
+log_time "$start" "$end"
