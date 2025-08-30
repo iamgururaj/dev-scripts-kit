@@ -1,4 +1,9 @@
 #!/bin/bash
 # Script to run mvn spotless:apply
-
-mvn spotless:apply
+mvn -q spotless:apply
+#!/bin/bash
+# Script to run mvn spotless:apply in quiet mode and log time
+source "$(dirname "$0")/log_time.sh"
+start=$(date +%s%N)
+mvn -q spotless:apply
+log_time "$start"
