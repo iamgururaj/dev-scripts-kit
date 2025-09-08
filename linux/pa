@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Shortcut for 'poetry add <package>'
+if [ -z "$1" ]; then
+  echo "Usage: pa <package>"
+  exit 1
+fi
+poetry add "$1"
