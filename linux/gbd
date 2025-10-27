@@ -1,0 +1,9 @@
+#!/bin/bash
+# gbd - delete a git branch by name
+
+if [ -z "$1" ]; then
+  echo "Usage: gbd <branch-name>"
+  exit 1
+fi
+
+git branch -D "$1"
