@@ -23,6 +23,7 @@ Below is a list of available scripts for both Linux and Windows, with their usag
 | gi.sh     | `gi.sh`                              | git init                                    |
 | gm.sh     | `gm.sh <branch>`                     | git merge <branch>                          |
 | gp.sh     | `gp.sh`                              | git push                                    |
+| gpf.sh    | `gpf.sh` (interactive)               | pull file from branch, commit, push         |
 | gpom.sh   | `gpom.sh`                            | git push origin main                        |
 | gpso.sh   | `gpso.sh <branch>`                   | git push origin <branch>                    |
 | gr.sh     | `gr.sh <remote-url>`                 | git remote add origin <url>                 |
@@ -53,6 +54,7 @@ Below is a list of available scripts for both Linux and Windows, with their usag
 | gi.cmd    | `gi.cmd`                             | git init                                    |
 | gm.cmd    | `gm.cmd <branch>`                    | git merge <branch>                          |
 | gp.cmd    | `gp.cmd`                             | git push                                    |
+| gpf.cmd   | `gpf.cmd` (interactive)              | pull file from branch, commit, push         |
 | gpom.cmd  | `gpom.cmd`                           | git push origin main                        |
 | gpso.cmd  | `gpso.cmd <branch>`                  | git push origin <branch>                    |
 | gr.cmd    | `gr.cmd <remote-url>`                | git remote add origin <url>                 |

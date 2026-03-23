@@ -1,5 +1,7 @@
 #!/bin/bash
 source "$(dirname "$0")/log_time.sh"
+source "$(dirname "$0")/log_info.sh"
 start=$(date +%s%N)
+log_info "mvn -q install -DskipTests"
 mvn -q install -DskipTests
 log_time "$start"

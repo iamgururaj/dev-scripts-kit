@@ -1,2 +1,3 @@
 #!/bin/bash
+echo "mvn versions:display-property-updates | grep -E 'RELEASE|Final|GA|\.\d+$' | grep -v -i 'alpha\|beta\|rc\|prerelease'"
 mvn versions:display-property-updates | grep -E 'RELEASE|Final|GA|\.\d+$' | grep -v -i 'alpha\|beta\|rc\|prerelease'
