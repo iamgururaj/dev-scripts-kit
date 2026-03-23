@@ -1,4 +1,5 @@
 #!/bin/bash
+source "$(dirname "$0")/log_info.sh"
 # gp.sh - git pull with optional parameters
 
-git pull "$@"
+log_run git pull "$@"

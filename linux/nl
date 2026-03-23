@@ -1,4 +1,5 @@
 #!/bin/bash
+source "$(dirname "$0")/log_info.sh"
 # nl.sh - npm login
 
-npm login
+log_run npm login

@@ -1,4 +1,5 @@
 #!/bin/bash
+source "$(dirname "$0")/log_info.sh"
 # gi.sh - git init
 
-git init
+log_run git init

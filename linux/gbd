@@ -1,4 +1,5 @@
 #!/bin/bash
+source "$(dirname "$0")/log_info.sh"
 # gbd - delete a git branch by name
 
 if [ -z "$1" ]; then
@@ -6,4 +7,4 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-git branch -D "$1"
+log_run git branch -D "$1"

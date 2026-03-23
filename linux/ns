@@ -1,4 +1,5 @@
 #!/bin/bash
+source "$(dirname "$0")/log_info.sh"
 # ns.sh - npm start
 
-npm start
+log_run npm start

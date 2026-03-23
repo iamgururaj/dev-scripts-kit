@@ -1,4 +1,5 @@
 #!/bin/bash
+source "$(dirname "$0")/log_info.sh"
 # gls.sh - git log with commit time, oneline, -n <number>
 
 if [ -z "$1" ]; then
@@ -6,4 +7,4 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-git log --pretty=format:"%h %ad %s" --date=iso -n "$1"
+log_run git log --pretty=format:"%h %ad %s" --date=iso -n "$1"

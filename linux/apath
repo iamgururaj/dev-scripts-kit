@@ -1,4 +1,5 @@
 #!/bin/bash
+source "$(dirname "$0")/log_info.sh"
 # Append a directory to PATH persistently for macOS and Linux.
 # Usage: apath /path/to/dir
 # Detect shell/profile file and append export line if not already present.

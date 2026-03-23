@@ -1,4 +1,5 @@
 #!/bin/bash
+source "$(dirname "$0")/log_info.sh"
 # gcpn - cherry-pick last N commits onto current branch
 
 if [ -z "$1" ] || [ -z "$2" ]; then
@@ -10,5 +11,5 @@ branch="$1"
 n="$2"
 commits=$(git log "$branch" -$n --reverse --format=%H)
 echo "Cherry-picking these commits from $branch (oldest first):"
-git log "$branch" -$n --reverse --oneline
-git cherry-pick $commits
+log_run git log "$branch" -$n --reverse --oneline
+log_run git cherry-pick $commits

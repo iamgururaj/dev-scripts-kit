@@ -1,4 +1,5 @@
 #!/bin/bash
+source "$(dirname "$0")/log_info.sh"
 # gcp.sh - git cherry-pick <commit-hash>
 
 if [ -z "$1" ]; then
@@ -6,4 +7,4 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-git cherry-pick "$1"
+log_run git cherry-pick "$1"

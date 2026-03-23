@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+source "$(dirname "$0")/log_info.sh"
 # Show current date and time; optional timezone parameter: UTC, IST, ET, PT, CET, GMT
 TZ_NAME="UTC"
 if [ "$#" -eq 1 ]; then
@@ -14,4 +15,5 @@ if [ "$#" -eq 1 ]; then
 		*) echo "Unknown timezone: $1" >&2; exit 1;;
 	esac
 fi
+log_info "+ TZ=$TZ_NAME date '+%Y-%m-%dT%H:%M:%S %Z'"
 TZ="$TZ_NAME" date '+%Y-%m-%dT%H:%M:%S %Z'

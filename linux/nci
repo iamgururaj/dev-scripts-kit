@@ -1,4 +1,5 @@
 #!/bin/bash
+source "$(dirname "$0")/log_info.sh"
 # nci.sh - npm ci
 
-npm ci
+log_run npm ci

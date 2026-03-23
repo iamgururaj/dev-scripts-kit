@@ -1,4 +1,5 @@
 #!/bin/bash
+source "$(dirname "$0")/log_info.sh"
 # Usage: gac "commit message"
 
 if [ -z "$1" ]; then
@@ -6,5 +7,5 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-git add .
-git commit -m "$1"
+log_run git add .
+log_run git commit -m "$1"
